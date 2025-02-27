@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <nav class="navbar hover:text-violet-600 fixed w-[100%]">
+        <div class="logo">EM</div>
+        <ul class="nav-links hover:text-violet-600">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Experiences">Experiences</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+  <section id="hero" class="bg-black-500 ">
+    <div class="container text-black">
+      <h1 class="text-black">Hi<span class="text-violet-600">,</span> I'm <br>Ellen Mensah</h1>
+      <p class="text-black">Web Developer & Graphic Designer</p>
+      <a href="#resume" class="btn"> Download Resume</a>
+    </div>
+  </section>
+
+  <section id="About" class="bg-gray-100 p-20 rounded-lg flex flex-col md:flex-row items-center justify-between h-screen">
+    <!-- Left Side (Text Content) -->
+    <div class="md:w-1/2 space-y-4">
+        <h2 class="text-2xl font-bold border-b">About Me.</h2>
+        <p class="font-semibold">
+          I have a background in economics with a strong grasp of global economic trends and practical experience in financial services, auditing, and document coordination. I've worked with cash management, sales, and mobile banking solutions like QR codes and POS systems.
+        </p>
+        <p class="text-gray-600 leading-relaxed">
+          As a visionary entrepreneur, I aspire to become a renowned businesswoman, support my family, and build a fulfilling personal life with an emotionally mature partner.
+        </p>
+
+        <!-- Contact Info -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+            <div>
+                <h4 class="font-semibold">Phone</h4>
+                <p class="text-gray-700">+233501311800</p>
+            </div>
+            <div>
+                <h4 class="font-semibold">Email</h4>
+                <p class="text-gray-700">mensahellen873@gmail.com</p>
+            </div>
+           
+        </div>
+    </div>
+
+    <!-- Right Side (Image and Social Media) -->
+    <div class="md:w-1/3 relative mt-10 md:mt-0 h-50">
+        <img src="./image/epic.jpg" alt="Profile Image" class=" shadow-lg border-2 border-dotted rounded-t-3xl">
+        <!-- <div class="bg-white text-white flex justify-center space-x-4 p-4 rounded-b-lg absolute left-0 right-0 bottom-0">
+            <a href="https://www.facebook.com/share/1FNBNqSHLf/?mibextid=wwXIfr" class="text-xl"><i class="fa fa-facebook-square" aria-hidden="true"></i></i></a>
+            <a href="#" class="text-xl"><i class="fab fa-dribbble"></i></a>
+            <a href="#" class="text-xl"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-xl"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="text-xl"><i class="fab fa-instagram"></i></a>
+        </div> -->
+    </div>
+</section>
+
+<section id="Skills" class="text-center py-16 bg-gray-100">
+  <h2 class="text-3xl font-bold text-gray-800 mb-10 border-b">SKILLS</h2>
+  <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+      
+      <!-- Skill Item -->
+      <div>
+          <h3 class="text-sm font-semibold text-gray-700 mb-2">HTML 5</h3>
+          <div class="relative w-full bg-gray-300 h-2 rounded-full">
+              <div class="absolute top-0 left-0 h-2 bg-purple-500 rounded-full" style="width: 90%;"></div>
+          </div>
+          <p class="text-purple-500 text-sm text-right mt-1">90%</p>
+      </div>
+
+      <div>
+          <h3 class="text-sm font-semibold text-gray-700 mb-2">CANVA</h3>
+          <div class="relative w-full bg-gray-300 h-2 rounded-full">
+              <div class="absolute top-0 left-0 h-2 bg-purple-500 rounded-full" style="width: 90%;"></div>
+          </div>
+          <p class="text-purple-500 text-sm text-right mt-1">90%</p>
+      </div>
+
+      <div>
+          <h3 class="text-sm font-semibold text-gray-700 mb-2">CSS</h3>
+          <div class="relative w-full bg-gray-300 h-2 rounded-full">
+              <div class="absolute top-0 left-0 h-2 bg-purple-500 rounded-full" style="width: 85%;"></div>
+          </div>
+          <p class="text-purple-500 text-sm text-right mt-1">85%</p>
+      </div>
+
+      <div>
+          <h3 class="text-sm font-semibold text-gray-700 mb-2">COLLABORATION</h3>
+          <div class="relative w-full bg-gray-300 h-2 rounded-full">
+              <div class="absolute top-0 left-0 h-2 bg-purple-500 rounded-full" style="width: 85%;"></div>
+          </div>
+          <p class="text-purple-500 text-sm text-right mt-1">85%</p>
+      </div>
+
+      <div>
+          <h3 class="text-sm font-semibold text-gray-700 mb-2">JAVASCRIPT</h3>
+          <div class="relative w-full bg-gray-300 h-2 rounded-full">
+              <div class="absolute top-0 left-0 h-2 bg-purple-500 rounded-full" style="width: 97%;"></div>
+          </div>
+          <p class="text-purple-500 text-sm text-right mt-1">97%</p>
+      </div>
+
+      <div>
+          <h3 class="text-sm font-semibold text-gray-700 mb-2">COMMUNICATION</h3>
+          <div class="relative w-full bg-gray-300 h-2 rounded-full">
+              <div class="absolute top-0 left-0 h-2 bg-purple-500 rounded-full" style="width: 97%;"></div>
+          </div>
+          <p class="text-purple-500 text-sm text-right mt-1">97%</p>
+      </div>
+
+      <div>
+          <h3 class="text-sm font-semibold text-gray-700 mb-2">FIGMA</h3>
+          <div class="relative w-full bg-gray-300 h-2 rounded-full">
+              <div class="absolute top-0 left-0 h-2 bg-purple-500 rounded-full" style="width: 90%;"></div>
+          </div>
+          <p class="text-purple-500 text-sm text-right mt-1">90%</p>
+      </div>
+
+      <div>
+          <h3 class="text-sm font-semibold text-gray-700 mb-2">TIME MANAGEMENT</h3>
+          <div class="relative w-full bg-gray-300 h-2 rounded-full">
+              <div class="absolute top-0 left-0 h-2 bg-purple-500 rounded-full" style="width: 90%;"></div>
+          </div>
+          <p class="text-purple-500 text-sm text-right mt-1">90%</p>
+      </div>
+
+  </div>
+</section>
+
+<section id="Experiences" class="py-16 bg-gray-100 text-center">
+  <h2 class="text-3xl font-bold text-gray-800 mb-10">EXPERIENCES</h2>
+
+  <div class="max-w-5xl mx-auto relative">
+      <!-- Vertical Line -->
+      <div class="absolute left-1/2 top-0 h-full w-1 bg-gray-300 transform -translate-x-1/2"></div>
+
+      <!-- Experience Item 1 -->
+      <div class="relative flex items-center justify-between mb-10">
+          <div class="w-5/12 text-right">
+              <h3 class="text-gray-800 text-lg font-semibold">2023 - 2024</h3>
+              <p class="text-purple-500 font-bold">Bank Official</p>
+          </div>
+          <div class="w-2 h-2 bg-purple-500 rounded-full absolute left-1/2 transform -translate-x-1/2"></div>
+          <div class="w-5/12 text-left">
+              <h3 class="text-gray-800 font-semibold">GCB Bank PLC</h3>
+              <p class="text-gray-500 text-sm">Accra, Ghana</p>
+              <p class="text-gray-400 text-sm">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pari. Exceptetur sint occaecat cupidatat non proident.</p>
+          </div>
+      </div>
+
+      <!-- Experience Item 2 -->
+      <div class="relative flex items-center justify-between flex-row-reverse mb-10">
+          <div class="w-5/12 text-left">
+              <h3 class="text-gray-800 text-lg font-semibold">2016 - 2045</h3>
+              <p class="text-purple-500 font-bold">ASSOCIATE DESIGN DIRECTOR</p>
+          </div>
+          <div class="w-2 h-2 bg-purple-500 rounded-full absolute left-1/2 transform -translate-x-1/2"></div>
+          <div class="w-5/12 text-right">
+              <h3 class="text-gray-800 font-semibold">HOPLONY TECH LIMITED</h3>
+              <p class="text-gray-500 text-sm">Newyork, USA</p>
+              <p class="text-gray-400 text-sm">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pari. Exceptetur sint occaecat cupidatat non proident.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section id="Work" class="py-16 bg-gray-100 text-center">
+  <h2 class="text-3xl font-bold text-gray-800 mb-10">Work</h2>
+
+  <div class="grid grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <!-- Portfolio Items -->
+      <div class="relative group">
+          <img src="./image/canva.png" alt="Project 1" class="w-full h-auto rounded-lg">
+      </div>
+      <div class="relative group">
+          <img src="./image/canvabc.png" alt="Project 2" class="w-full h-auto rounded-lg">
+          <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+              <span class="text-white font-semibold text-lg">WEB DESIGN</span>
+          </div>
+      </div>
+      <div class="relative group">
+          <img src=".//image/canva.png" alt="Project 3" class="w-full h-auto rounded-lg">
+      </div>
+      <div class="relative group">
+          <img src="./image/canva.png" alt="Project 4" class="w-full h-auto rounded-lg">
+      </div>
+      <div class="relative group">
+          <img src="./image/canva.png" alt="Project 5" class="w-full h-auto rounded-lg">
+      </div>
+  </div>
+</section>
+
+<section class="bg-purple-300 p-10 flex justify-between items-end h-50">
+  <h2 class="text-6xl font-extrabold text-black">GET IN TOUCH</h2>
+  <div class="flex flex-col items-end">
+    <a href="#" class="text-3xl text-black hover:scale-110 transition-transform duration-300">
+      &#8599;
+    </a>
+    <div class="flex space-x-6 mt-4 text-black">
+      <a href="#" class="hover:underline">Twitter</a>
+      <a href="#" class="hover:underline">Behance</a>
+      <a href="#" class="hover:underline">Dribbble</a>
+    </div>
+  </div>
+</section>
+
+   
+ 
+</body>
+</html>
