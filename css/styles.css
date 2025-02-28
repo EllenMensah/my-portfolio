@@ -20,6 +20,7 @@ body {
 .logo {
     font-size: 24px;
     font-weight: bold;
+    background-image: url(../image/ecommerce-3562005_1920.jpg);
 }
 
 .nav-links {
@@ -59,7 +60,7 @@ body {
   .btn {
     display: inline-block;
     padding: 10px 20px;
-    background: #c46de4;
+    background: #AD46FF;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -67,7 +68,7 @@ body {
   }
   
   .btn:hover {
-    background: #AD46FF;
+    background: #3f1263;
   }
   
   /* Hero Section */
@@ -81,12 +82,14 @@ body {
     height: 100vh;
     background-size: cover;
     background-position: center;
+  
     
   }
   
   #hero h1 {
     font-size: 4rem;
     margin-bottom: 10px;
+    color: #000;
   }
   
   #hero p {
@@ -104,6 +107,61 @@ body {
     width: 150px;
     height: 150px;
     margin-top: 20px;
+  }
+
+#profile{
+  display: flex;
+  height: 100px;
+}
+
+
+
+#gallery {
+  margin: 2em;
+}
+
+      .filter {
+      display: flex;
+      gap: 25px;
+      margin-bottom: 1em;
+      justify-content: center; /* Center the filter buttons */
+  }
+
+  .filter-btn {
+      background-color: #333;
+      color: white;
+      padding: 0.5em 1em;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  }
+
+  .filter-btn:hover {
+      background-color: #555;
+  }
+
+  .image-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px; /* Increased gap between images */
+      justify-content: center; /* Center the images */
+  }
+
+  .image {
+      width: 225px;
+      overflow: hidden;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  img {
+      height: 100px;
+      width: 200px;
+      display: block;
+      border-radius: 5px;
+      object-fit: cover;
+      margin: 10px;
   }
   
   /* Portfolio Section */

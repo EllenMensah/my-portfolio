@@ -5,37 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
 <body>
     <nav class="navbar hover:text-violet-600 fixed w-[100%]">
-        <div class="logo">EM</div>
+        <div class="logo font-bold text-transparent bg-clip-text bg-center bg-cover italic">EM</div>
         <ul class="nav-links hover:text-violet-600">
             <li><a href="#home">Home</a></li>
             <li><a href="#About">About</a></li>
             <li><a href="#Skills">Skills</a></li>
             <li><a href="#Experiences">Experiences</a></li>
-            <li><a href="#work">Work</a></li>
+            <li><a href="#gallery">Work</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-  <section id="hero" class="bg-black-500 ">
-    <div class="container text-black">
-      <h1 class="text-black">Hi<span class="text-violet-600">,</span> I'm <br>Ellen Mensah</h1>
+  <section id="hero" class="bg-black-500 opacity-75">
+    <div class="container text-white font-bold">
+      <h1 class="text">Hi<span class="text-violet-600">,</span> I'm <br>Ellen Mensah</h1>
       <p class="text-black">Web Developer & Graphic Designer</p>
       <a href="#resume" class="btn"> Download Resume</a>
     </div>
   </section>
 
-  <section id="About" class="bg-gray-100 p-20 rounded-lg flex flex-col md:flex-row items-center justify-between h-screen">
+  <section id="About" class="bg-[#D7D7D7]-20 p-20 rounded-lg flex flex-col md:flex-row items-center justify-between h-screen ">
     <!-- Left Side (Text Content) -->
     <div class="md:w-1/2 space-y-4">
         <h2 class="text-2xl font-bold border-b">About Me.</h2>
         <p class="font-semibold">
-          I have a background in economics with a strong grasp of global economic trends and practical experience in financial services, auditing, and document coordination. I've worked with cash management, sales, and mobile banking solutions like QR codes and POS systems.
+            I'm a passionate web developer with a strong analytical mindset and a deep understanding of problem-solving, honed through my background in economics and financial services. I have hands-on experience in front-end development, specializing in HTML, CSS, and JavaScript, and I'm constantly expanding my skill set.
         </p>
         <p class="text-gray-600 leading-relaxed">
-          As a visionary entrepreneur, I aspire to become a renowned businesswoman, support my family, and build a fulfilling personal life with an emotionally mature partner.
+            My expertise in financial services, auditing, and document coordination has given me a structured and detail-oriented approach to building seamless digital experiences. As a visionary entrepreneur, I aspire to create impactful web solutions, establish a strong presence in the tech industry.
         </p>
 
         <!-- Contact Info -->
@@ -46,27 +47,30 @@
             </div>
             <div>
                 <h4 class="font-semibold">Email</h4>
-                <p class="text-gray-700">mensahellen873@gmail.com</p>
+                <!-- <p class="text-gray-700">mensahellen873@gmail.com</p> -->
+                <a href="mailto:mensahellen873@gmail.com" class="text-violet-500 hover:underline">
+                    mensahellen873@gmail.com
+                </a>
+                
             </div>
            
         </div>
     </div>
 
     <!-- Right Side (Image and Social Media) -->
-    <div class="md:w-1/3 relative mt-10 md:mt-0 h-50">
-        <img src="./image/epic.jpg" alt="Profile Image" class=" shadow-lg border-2 border-dotted rounded-t-3xl">
-        <!-- <div class="bg-white text-white flex justify-center space-x-4 p-4 rounded-b-lg absolute left-0 right-0 bottom-0">
-            <a href="https://www.facebook.com/share/1FNBNqSHLf/?mibextid=wwXIfr" class="text-xl"><i class="fa fa-facebook-square" aria-hidden="true"></i></i></a>
-            <a href="#" class="text-xl"><i class="fab fa-dribbble"></i></a>
-            <a href="#" class="text-xl"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="text-xl"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" class="text-xl"><i class="fab fa-instagram"></i></a>
-        </div> -->
+    <!-- <div id="profile" class="flex flex-col justify-center md:w-1/3 relative mt-10 md:mt-0 h-100 border-2 rounded-full border-4 border-dotted border-black">
+        <img src="./image/WhatsApp Image 2025-02-27 at 23.58.20_a9b5dc1c.jpg" alt="Profile Image" class=" shadow-lg  ">  
+    </div> -->
+    <div id="profile" class="h-80 w-100 flex-col justify-center items-center md:w-1/3 relative mt-10 md:mt-0">
+        <div class="w-100 h-100dvh   overflow-hidden flex justify-center items-center">
+            <img src="./image/we.jpg" alt="Profile Image" class="w-full h-full object-cover">
+        </div>
     </div>
+    
 </section>
 
-<section id="Skills" class="text-center py-16 bg-gray-100">
-  <h2 class="text-3xl font-bold text-gray-800 mb-10 border-b">SKILLS</h2>
+<section id="Skills" class="text-center py-16 bg-[#D7D7D7]-20 border">
+  <h2 class="text-3xl font-bold text-black mb-10 border-b">SKILLS</h2>
   <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
       
       <!-- Skill Item -->
@@ -137,8 +141,8 @@
   </div>
 </section>
 
-<section id="Experiences" class="py-16 bg-gray-100 text-center">
-  <h2 class="text-3xl font-bold text-gray-800 mb-10">EXPERIENCES</h2>
+<section id="Experiences" class="py-16 bg-[#D7D7D7]-20 text-center border">
+  <h2 class="text-3xl font-bold text-black mb-10 border-b ">EXPERIENCES</h2>
 
   <div class="max-w-5xl mx-auto relative">
       <!-- Vertical Line -->
@@ -154,67 +158,113 @@
           <div class="w-5/12 text-left">
               <h3 class="text-gray-800 font-semibold">GCB Bank PLC</h3>
               <p class="text-gray-500 text-sm">Accra, Ghana</p>
-              <p class="text-gray-400 text-sm">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pari. Exceptetur sint occaecat cupidatat non proident.</p>
+              <p class="text-gray-400 text-sm">
+                <ul class="list-disc pl-5">
+                    <li>Documentation of mobile banking services.</li>
+                    <li>Service Desk technicain</li>
+                    <li>Sales work with the Pan-African Payment System (PAPSS)</li>
+                </ul>
+                
+              </p>
           </div>
       </div>
 
       <!-- Experience Item 2 -->
       <div class="relative flex items-center justify-between flex-row-reverse mb-10">
           <div class="w-5/12 text-left">
-              <h3 class="text-gray-800 text-lg font-semibold">2016 - 2045</h3>
-              <p class="text-purple-500 font-bold">ASSOCIATE DESIGN DIRECTOR</p>
+              <h3 class="text-gray-800 text-lg font-semibold">2022</h3>
+              <p class="text-purple-500 font-bold">Auditor</p>
           </div>
           <div class="w-2 h-2 bg-purple-500 rounded-full absolute left-1/2 transform -translate-x-1/2"></div>
           <div class="w-5/12 text-right">
-              <h3 class="text-gray-800 font-semibold">HOPLONY TECH LIMITED</h3>
-              <p class="text-gray-500 text-sm">Newyork, USA</p>
-              <p class="text-gray-400 text-sm">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pari. Exceptetur sint occaecat cupidatat non proident.</p>
+              <h3 class="text-gray-800 font-semibold">Ga Central Municipal Assembly</h3>
+              <p class="text-gray-500 text-sm">Accra, Ghana</p>
+              <p class="text-gray-400 text-sm">
+                <ul class="list-disc pl-5 text-left">
+                    <li>Reviewing financial statements for accuracy.</li>
+                    <li>Gathering and analyzing financial data.</li>
+                    <li>Maintaining organized audit files and working papers.</li>
+                </ul>
+              </p>
           </div>
       </div>
   </div>
 </section>
 
-<section id="Work" class="py-16 bg-gray-100 text-center">
-  <h2 class="text-3xl font-bold text-gray-800 mb-10">Work</h2>
-
-  <div class="grid grid-cols-3 gap-6 max-w-6xl mx-auto">
-      <!-- Portfolio Items -->
-      <div class="relative group">
-          <img src="./image/canva.png" alt="Project 1" class="w-full h-auto rounded-lg">
-      </div>
-      <div class="relative group">
-          <img src="./image/canvabc.png" alt="Project 2" class="w-full h-auto rounded-lg">
-          <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
-              <span class="text-white font-semibold text-lg">WEB DESIGN</span>
-          </div>
-      </div>
-      <div class="relative group">
-          <img src=".//image/canva.png" alt="Project 3" class="w-full h-auto rounded-lg">
-      </div>
-      <div class="relative group">
-          <img src="./image/canva.png" alt="Project 4" class="w-full h-auto rounded-lg">
-      </div>
-      <div class="relative group">
-          <img src="./image/canva.png" alt="Project 5" class="w-full h-auto rounded-lg">
-      </div>
-  </div>
-</section>
-
-<section class="bg-purple-300 p-10 flex justify-between items-end h-50">
-  <h2 class="text-6xl font-extrabold text-black">GET IN TOUCH</h2>
-  <div class="flex flex-col items-end">
-    <a href="#" class="text-3xl text-black hover:scale-110 transition-transform duration-300">
-      &#8599;
-    </a>
-    <div class="flex space-x-6 mt-4 text-black">
-      <a href="#" class="hover:underline">Twitter</a>
-      <a href="#" class="hover:underline">Behance</a>
-      <a href="#" class="hover:underline">Dribbble</a>
+<section id="gallery">
+    <h1 class="text-3xl font-bold text-black mb-10 border-b flex justify-center">Work</h1>
+    <div class="filter">
+        <button class="filter-btn" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="Cars">Website</button>
+        <button class="filter-btn" data-filter="graphic">Graphic</button>
     </div>
-  </div>
+
+    <div class="image-container">
+        <div class="image Cars">
+            <img src="./image/mk.png" alt="HyperCar">
+            <img src="./image/ws1.png" alt="BlackSeries">
+            <img src="images/f108.jpg" alt="Formula 1">
+            <!-- Add more car images with appropriate alt text -->
+        </div>
+        <div class="image graphic">
+            <img src="./image/canvabc.png" alt="city 1">
+            <img src="./image/canva.png" alt="city2">
+            <img src="./image/canva1.png" alt="city3">
+          
+            <!-- Add more city images with appropriate alt text -->
+        </div>
+    </div>
 </section>
+
+<section id="contact" class="flex flex-row justify-center items-center">
+<div class="bg-purple-300 py-16 px-8 w-full">
+    <h2 class="text-6xl font-extrabold text-black mb-6">GET IN TOUCH</h2>
+    
+    <form class="max-w-lg">
+        <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Name</label>
+            <input class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" type="text" id="name" placeholder="Your Name">
+        </div>
+        
+        <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email</label>
+            <input class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" type="email" id="email" placeholder="Your Email">
+        </div>
+        
+        <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="message">Message</label>
+            <textarea class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" id="message" rows="4" placeholder="Your Message"></textarea>
+        </div>
+        
+        <button class="bg-purple-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700" type="submit">
+            Send Message
+        </button>
+    </form>
+</div>
+</section>
+
+<footer class="bg-black text-white py-6 px-4 text-center flex justify-center items-center flex-col">
+    <div class=" gap-x-2 w-40 bg-black text-white py-16 px-10 h-2 bg-black flex flex-row">
+        <a href="https://www.facebook.com/share/1FNBNqSHLf/?mibextid=wwXIfr" class="text-2xl"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+        <a href="#" class="text-xl"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/ellen-mensah-738680313/" class="text-xl"><i class="fa fa-linkedin"></i></a>
+        <a href="#" class="text-xl"><i class="fa fa-instagram"></i></a>
+    </div>
+    <div class="container mx-auto">
+        <p class="text-sm">&copy; 2025 EllenMensah. All rights reserved.</p>
+        <p class="text-xs mt-2">
+            Unauthorized reproduction, distribution, or use of this website's content, including text, images, and designs, is strictly prohibited. All trademarks and copyrights belong to their respective owners.
+        </p>
+        <div class="mt-4">
+            <a href="#" class="text-blue-400 hover:underline text-sm">Privacy Policy</a> |
+            <a href="#" class="text-blue-400 hover:underline text-sm">Terms of Service</a>
+        </div>
+    </div>
+</footer>
+
+
 
    
- 
+ <script src="./script.js"></script>
 </body>
 </html>
