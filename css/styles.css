@@ -110,8 +110,8 @@ body {
   }
 
 #profile{
-  display: flex;
-  height: 100px;
+  height: 100%;
+  width: 100%;
 }
 
 
@@ -149,19 +149,25 @@ body {
   }
 
   .image {
-      width: 225px;
+      width: 100px;
       overflow: hidden;
       border-radius: 5px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
 
-  img {
+ .image img {
       height: 100px;
       width: 200px;
       display: block;
       border-radius: 5px;
       object-fit: cover;
       margin: 10px;
+  }
+
+
+  .About-img{
+    max-width: 1020px;
+    height: 1500px;
   }
   
   /* Portfolio Section */
