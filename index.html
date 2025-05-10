@@ -12,72 +12,56 @@
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="">
-    <nav
-      class="flex justify-between items-center fixed w-full bg-black text-white py-4 px-6 shadow-md z-50"
-    >
-      <div class="text-xl font-bold">Ellen</div>
-      <div class="flex justify-between items-center py-4">
-        <ul class="flex flex-row space-x-6">
+  <body class="overflow-x-hidden">
+    <nav class="bg-black text-white fixed w-full z-50 shadow-md">
+      <div class="flex items-center justify-between px-6 py-4">
+        <div class="text-xl font-bold">Ellen</div>
+
+        <!-- Mobile toggle (checkbox + label) -->
+        <div class="md:hidden">
+          <input type="checkbox" id="menu-toggle" class="hidden peer" />
+          <label for="menu-toggle" class="cursor-pointer">
+            <div class="space-y-1.5">
+              <div class="w-6 h-0.5 bg-white"></div>
+              <div class="w-6 h-0.5 bg-white"></div>
+              <div class="w-6 h-0.5 bg-white"></div>
+            </div>
+          </label>
+        </div>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex space-x-6">
           <li>
-            <a
-              href="#home"
-              class="hover:text-violet-400 transition duration-300"
-              >Home</a
-            >
+            <a href="#home" class="hover:text-violet-400 transition">Home</a>
           </li>
           <li>
-            <a
-              href="#About"
-              class="hover:text-violet-400 transition duration-300"
-              >About</a
-            >
+            <a href="#About" class="hover:text-violet-400 transition">About</a>
           </li>
           <li>
-            <a
-              href="#Skills"
-              class="hover:text-violet-400 transition duration-300"
+            <a href="#Skills" class="hover:text-violet-400 transition"
               >Skills</a
             >
           </li>
           <li>
-            <a
-              href="#Experiences"
-              class="hover:text-violet-400 transition duration-300"
+            <a href="#Experiences" class="hover:text-violet-400 transition"
               >Experiences</a
             >
           </li>
           <li>
-            <a
-              href="#gallery"
-              class="hover:text-violet-400 transition duration-300"
-              >Work</a
-            >
+            <a href="#gallery" class="hover:text-violet-400 transition">Work</a>
           </li>
           <li>
-            <a
-              href="#contact"
-              class="hover:text-violet-400 transition duration-300"
+            <a href="#contact" class="hover:text-violet-400 transition"
               >Contact</a
             >
           </li>
         </ul>
-
-        <!-- <div class="md:hidden">
-            <button class="text-white focus:outline-none">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
-        </div> -->
-        <!-- Mobile Menu Placeholder Icon -->
-        <div class="md:hidden">
-          <span class="text-sm text-gray-400">☰</span>
-        </div>
       </div>
 
-      <!-- Mobile Menu (Visible always for now) -->
-      <div class="md:hidden flex flex-col space-y-4 pb-4">
+      <!-- Mobile Menu (shown when checkbox is checked) -->
+      <div
+        class="hidden peer-checked:flex flex-col md:hidden px-6 pb-4 space-y-4 bg-black"
+      >
         <a href="#home" class="hover:text-violet-400 transition">Home</a>
         <a href="#About" class="hover:text-violet-400 transition">About</a>
         <a href="#Skills" class="hover:text-violet-400 transition">Skills</a>
@@ -103,7 +87,7 @@
                 class="absolute inset-0 rounded-full bg-blue-500/10 animate-pulse"
               ></div>
               <img
-                src="./img/profile.jpg"
+                src="./images/profile.jpg"
                 alt="Ellen Mensah - Frontend Developer"
                 class="w-full h-full object-cover rounded-full border-2 border-dotted border-blue-400 p-1"
               />
@@ -445,126 +429,77 @@
       </div>
     </section>
 
-    <section id="Experiences" class="bg-[#111827] flex justify-center p-20">
-      <div class="max-w-3xl w-full">
+    <section id="Experiences" class="bg-[#111827] flex justify-center px-4 sm:px-6 lg:px-20 py-20 min-h-screen">
+      <div class="max-w-4xl w-full">
+        <!-- Title -->
         <div class="text-center mb-8">
-          <span class="text-white px-4 py-1 text-2xl"> Experience </span>
+          <span class="text-white px-4 py-1 text-2xl">Experience</span>
         </div>
-
-        <p class="text-gray-300 text-center mb-12">
+    
+        <p class="text-gray-300 text-center mb-12 text-base sm:text-lg">
           Here is a quick summary of my most recent experiences:
         </p>
-
-        <!-- Sr. Frontend Developer -->
-        <div
-          class="bg-[#1F2937] rounded-lg shadow-lg shadow-blue-500/50 p-6 mb-6 flex"
-        >
-          <div class="mr-6 pt-1">
+    
+        <!-- Experience Block Template -->
+        <div class="bg-[#1F2937] rounded-lg shadow-lg shadow-blue-500/50 p-4 sm:p-6 mb-6 flex flex-col sm:flex-row">
+          <div class="mb-4 sm:mb-0 sm:mr-6">
             <span class="text-upworkGreen font-bold text-lg">upwork</span>
           </div>
           <div class="flex-1">
-            <div class="flex justify-between items-start mb-3">
-              <h3 class="text-white text-xl font-medium">
-                Sr. Frontend Developer
-              </h3>
+            <div class="flex flex-col sm:flex-row sm:justify-between items-start mb-3 gap-1">
+              <h3 class="text-white text-lg sm:text-xl font-medium">Sr. Frontend Developer</h3>
               <span class="text-gray-400 text-sm">Nov 2021 - Present</span>
             </div>
-            <ul class="text-gray-400 space-y-2">
-              <li class="flex items-start">
-                <span class="text-gray-400 mr-2">•</span>
-                <span
-                  >Lorem ipsum dolor sit amet, consectetur adipiscing
-                  elit.</span
-                >
-              </li>
-              <li class="flex items-start">
-                <span class="text-gray-400 mr-2">•</span>
-                <span
-                  >Ut pretium arcu at massa semper, id fringilla leo
-                  semper.</span
-                >
-              </li>
-              <li class="flex items-start">
-                <span class="text-gray-400 mr-2">•</span>
-                <span>Sed quis justo ac magna.</span>
-              </li>
-              <li class="flex items-start">
-                <span class="text-gray-400 mr-2">•</span>
-                <span
-                  >Lorem ipsum dolor sit amet, consectetur adipiscing
-                  elit.</span
-                >
-              </li>
+            <ul class="text-gray-400 space-y-2 text-sm sm:text-base">
+              <li class="flex items-start"><span class="mr-2">•</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+              <li class="flex items-start"><span class="mr-2">•</span> Ut pretium arcu at massa semper, id fringilla leo semper.</li>
+              <li class="flex items-start"><span class="mr-2">•</span> Sed quis justo ac magna.</li>
+              <li class="flex items-start"><span class="mr-2">•</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
             </ul>
           </div>
         </div>
-
+    
         <!-- GCB -->
-        <div
-          class="bg-[#1F2937] rounded-lg shadow-lg shadow-blue-500/50 p-6 mb-6 flex"
-        >
-          <div class="mr-6 pt-1">
+        <div class="bg-[#1F2937] rounded-lg shadow-lg shadow-blue-500/50 p-4 sm:p-6 mb-6 flex flex-col sm:flex-row">
+          <div class="mb-4 sm:mb-0 sm:mr-6">
             <span class="text-upworkGreen font-bold text-lg">GCB Bank PLC</span>
           </div>
           <div class="flex-1">
-            <div class="flex justify-between items-start mb-3">
-              <h3 class="text-white text-xl font-medium">Bank Official</h3>
+            <div class="flex flex-col sm:flex-row sm:justify-between items-start mb-3 gap-1">
+              <h3 class="text-white text-lg sm:text-xl font-medium">Bank Official</h3>
               <span class="text-gray-400 text-sm">2023 - 2024</span>
             </div>
-            <ul class="text-gray-400 space-y-2">
-              <li class="flex items-start">
-                <span class="text-gray-400 mr-2">•</span>
-                <span>Documentation of mobile banking services.</span>
-              </li>
-              <li class="flex items-start">
-                <span class="text-gray-400 mr-2">•</span>
-                <span>Service Desk technicain</span>
-              </li>
-              <li class="flex items-start">
-                <span class="text-gray-400 mr-2">•</span>
-                <span
-                  >Sales work with the Pan-African Payment System (PAPSS)</span
-                >
-              </li>
+            <ul class="text-gray-400 space-y-2 text-sm sm:text-base">
+              <li class="flex items-start"><span class="mr-2">•</span> Documentation of mobile banking services.</li>
+              <li class="flex items-start"><span class="mr-2">•</span> Service Desk technician</li>
+              <li class="flex items-start"><span class="mr-2">•</span> Sales work with the Pan-African Payment System (PAPSS)</li>
             </ul>
           </div>
         </div>
-
-        <!-- Full Stack Developer -->
-        <div
-          class="bg-[#1F2937] rounded-lg shadow-lg shadow-blue-500/50 p-6 flex"
-        >
-          <div class="mr-6 pt-1">
-            <span class="text-upworkGreen font-bold text-lg"
-              >Ga Central <br />
+    
+        <!-- Ga Central -->
+        <div class="bg-[#1F2937] rounded-lg shadow-lg shadow-blue-500/50 p-4 sm:p-6 flex flex-col sm:flex-row">
+          <div class="mb-4 sm:mb-0 sm:mr-6">
+            <span class="text-upworkGreen font-bold text-lg leading-tight block">
+              Ga Central <br />
               Municipal <br />
-              Assembly</span
-            >
+              Assembly
+            </span>
           </div>
           <div class="flex-1">
-            <div class="flex justify-between items-start mb-3">
-              <h3 class="text-white text-xl font-medium">
-                Full Stack Developer
-              </h3>
+            <div class="flex flex-col sm:flex-row sm:justify-between items-start mb-3 gap-1">
+              <h3 class="text-white text-lg sm:text-xl font-medium">Full Stack Developer</h3>
               <span class="text-gray-400 text-sm">Dec 2015 - May 2017</span>
             </div>
-            <ul class="text-gray-400 space-y-2">
-              <li class="flex items-start">
-                <span class="text-gray-400 mr-2">•</span>
-                <span
-                  >Maintaining organized audit files and working papers.</span
-                >
-              </li>
-              <li class="flex items-start">
-                <span class="text-gray-400 mr-2">•</span>
-                <span>Reviewing financial statements for accuracy.</span>
-              </li>
+            <ul class="text-gray-400 space-y-2 text-sm sm:text-base">
+              <li class="flex items-start"><span class="mr-2">•</span> Maintaining organized audit files and working papers.</li>
+              <li class="flex items-start"><span class="mr-2">•</span> Reviewing financial statements for accuracy.</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
-
+    
     <section id="Project" class="flex justify-center pt-10 pb-10 bg-[#030712]">
       <div class="max-w-5xl w-full">
         <div class="text-center mb-8">
@@ -585,7 +520,7 @@
             <div class="md:w-1/2">
               <div class="h-full">
                 <img
-                  src="./image/mk.png"
+                  src="./images/roycare.png"
                   alt="Fiskil Project"
                   class="w-full h-full object-cover"
                 />
@@ -594,11 +529,14 @@
             <div class="md:w-1/2 p-6">
               <h3 class="text-white text-xl font-medium mb-3">About</h3>
               <p class="text-gray-400 mb-6">
-                This makeup website is a stylish and user-friendly platform
-                designed to showcase makeup products, share beauty tips, and
-                provide tutorials for users of all skill levels. It aims to
-                inspire confidence and creativity through makeup, especially
-                tailored to the needs and trends of African beauty.
+                Currently, I’m working on Roycare, a baby care brand website
+                under AFB Golden Enterprise. The goal is to create an engaging
+                e-commerce platform that introduces Roycare’s line of organic
+                baby products—such as lotions, shampoos, and detergents—while
+                also educating parents on natural baby care practices and
+                building a supportive community. This project emphasizes
+                responsive design, clean UI/UX, and accessibility for both local
+                and international customers.
               </p>
               <div class="flex flex-wrap gap-2">
                 <span
@@ -628,9 +566,58 @@
             <div class="md:w-1/2">
               <div class="h-full">
                 <img
-                  src="./image/gp.png"
+                  src="./images/recipe.png"
                   alt="Fiskil Project"
                   class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            <div class="md:w-1/2 p-6">
+              <h3 class="text-white text-xl font-medium mb-3">About</h3>
+              <p class="text-gray-400 mb-6">
+                This website is a dedicated platform for discovering and sharing
+                authentic Ghanaian recipes. It helps tourists, Ghanaians abroad,
+                and the younger generation easily access and learn how to cook
+                local dishes. The site focuses exclusively on Ghanaian cuisine,
+                preserving and promoting the country’s rich culinary heritage.
+              </p>
+              <a
+                  href="https://recipe-website-6hfz.vercel.app/"
+                  class="text-purple-400 hover:text-purple-300 hover:underline"
+                >
+                  Ghana Eats
+                </a>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="bg-tagBg text-gray-300 px-3 py-1 rounded-full text-xs"
+                  >React</span
+                >
+                <span
+                  class="bg-tagBg text-gray-300 px-3 py-1 rounded-full text-xs"
+                  >JavaScript</span
+                >
+                <span
+                  class="bg-tagBg text-gray-300 px-3 py-1 rounded-full text-xs"
+                  >Tailwind</span
+                >
+                <span
+                  class="bg-tagBg text-gray-300 px-3 py-1 rounded-full text-xs"
+                  >Figma</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="bg-cardBg rounded-lg overflow-hidden">
+          <div class="flex flex-col md:flex-row">
+            <div class="md:w-1/2">
+              <div class="h-full">
+                <img
+                  src="./images/digitech.png"
+                  alt="Fiskil Project"
+                  class="w-full h-64 object-cover"
                 />
               </div>
             </div>
@@ -664,44 +651,12 @@
             </div>
           </div>
         </div>
-
-        <!-- Project 3 -->
-        <div class="bg-cardBg rounded-lg overflow-hidden">
-          <div class="flex flex-col md:flex-row">
-            <div class="md:w-1/2">
-              <div class="h-full">
-                <img
-                  src="./image/canva1.png"
-                  alt="Fiskil Project"
-                  class="w-full h-64 object-cover"
-                />
-              </div>
-            </div>
-            <div class="md:w-1/2 p-6">
-              <h3 class="text-white text-xl font-medium mb-3">About</h3>
-              <p class="text-gray-400 mb-6">
-                This makeup poster is a visually captivating design used to
-                promote beauty products, makeup tutorials, or beauty events. It
-                features bold, eye-catching images of models, product shots, or
-                makeup looks, paired with stylish fonts and vibrant colors. The
-                goal is to grab attention, communicate the brand's aesthetic,
-                and inspire viewers to explore or purchase makeup products.
-              </p>
-              <div class="flex flex-wrap gap-2">
-                <span
-                  class="bg-tagBg text-gray-300 px-3 py-1 rounded-full text-xs"
-                  >Canva</span
-                >
-              </div>
-            </div>
-          </div>
-        </div>
         <div class="bg-cardBg rounded-lg mb-8 overflow-hidden">
           <div class="flex flex-col md:flex-row-reverse">
             <div class="md:w-1/2">
               <div class="h-full">
                 <img
-                  src="./image/gp1.png"
+                  src="./images/library.png"
                   alt="Fiskil Project"
                   class="w-full h-full object-cover"
                 />
@@ -832,6 +787,6 @@
       </div>
     </footer>
 
-    <script src="./script.js"></script>
+    <!-- <script src="./script.js"></script> -->
   </body>
 </html>
