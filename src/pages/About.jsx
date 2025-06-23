@@ -180,14 +180,14 @@ const About = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7, delay: 0.3 }}
         >
-          <motion.img
+          {/* <motion.img
             src={Profile}
             alt="Client"
             className="w-24 h-24 rounded-full object-cover mb-4"
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-          />
+          /> */}
 
           <motion.h3
             className="text-xl font-semibold text-gray-900"
@@ -213,7 +213,7 @@ const About = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.7, delay: 0.7 }}
           >
-            "Working with Mr. Felix Ashong was a game-changer for our business.
+            "Working with Ellen  was a game-changer for our business.
             He delivered our e-commerce platform ahead of schedule and with more
             features than we initially requested. His technical expertise and
             communication skills made the development process smooth and
