@@ -106,7 +106,7 @@ const About = () => {
               learning, and a knack for solving problems. My journey into tech
               was not linear, it began in the world of economics and financial
               services, where I developed a sharp analytical mindset and a
-              detail-driven approach to work............God
+              detail-driven approach to work.
             </p>
             <p className="text-gray-600 dark:text-gray-300 text-md md:text-lg leading-relaxed">
               During my time in auditing and document coordination, I worked
