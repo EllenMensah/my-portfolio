@@ -145,7 +145,7 @@ const Landing = () => {
                 </h3>
 
                 {/* Service Description */}
-                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                <p className="text-black dark:text-gray-300 leading-relaxed">
                   {service.description}
                 </p>
               </div>
