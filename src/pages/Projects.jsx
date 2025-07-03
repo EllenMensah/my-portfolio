@@ -26,6 +26,8 @@ const Projects = () => {
       image: Roycare,
       category: "Web Development",
       tags: ["React", "Node.js", "JavaScript"],
+      codeLink: "https://github.com/EllenMensah/roycare",   // replace with your actual repo
+      demoLink: "https://roycare.netlify.app",
     },
     {
       id: 2,
@@ -35,6 +37,8 @@ const Projects = () => {
       image: Recipe,
       category: "Mobile Apps",
       tags: ["React", "Node.js", "JavaScript"],
+      codeLink: "https://github.com/EllenMensah/roycare",   // replace with your actual repo
+      demoLink: "https://recipe-website-6hfz-eeoqg8fel-ellenmensahs-projects.vercel.app",
     },
     {
       id: 3,
@@ -44,6 +48,8 @@ const Projects = () => {
       image: Digitech,
       category: "Web Development",
       tags: ["React", "Node.js", "JavaScript"],
+      codeLink: "https://github.com/EllenMensah/roycare",   // replace with your actual repo
+      demoLink: "https://roycare.netlify.app",
     },
     {
       id: 3,
@@ -51,9 +57,10 @@ const Projects = () => {
       description:
         "This library website is a user-friendly digital platform designed to give users easy access to books, research materials, and library services. It allows users to browse the catalog, reserve or borrow books, explore digital resources, and stay updated on events or programs. The site aims to promote reading, support education, and make the library accessible anytime, anywhere.",
       image: Library,
-
       category: "Web Development",
       tags: ["React", "Node.js", "JavaScript"],
+      codeLink: "https://github.com/EllenMensah/roycare",   // replace with your actual repo
+      demoLink: "https://roycare.netlify.app",
     },
   ];
 
@@ -99,9 +106,8 @@ const Projects = () => {
     <section ref={sectionRef} className="py-20 px-4 bg-gray-50 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div
-          className={`text-center mb-16 transition-all duration-1000 ${
-            isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-          }`}
+          className={`text-center mb-16 transition-all duration-1000 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+            }`}
         >
           <h2 className="text-4xl font-bold text-gray-900 mb-6 relative">
             My Portfolio
@@ -113,19 +119,17 @@ const Projects = () => {
         </div>
 
         <div
-          className={`flex flex-wrap justify-center gap-4 mb-12 transition-all duration-1000 delay-300 ${
-            isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-          }`}
+          className={`flex flex-wrap justify-center gap-4 mb-12 transition-all duration-1000 delay-300 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+            }`}
         >
           {filters.map((filter) => (
             <button
               key={filter}
               onClick={() => setActiveFilter(filter)}
-              className={`px-6 py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105 ${
-                activeFilter === filter
-                  ? "bg-blue-500 text-white shadow-lg shadow-orange-500/25"
-                  : "bg-white text-gray-700 hover:bg-blue-100 hover:text-[#FD0315] shadow-sm"
-              }`}
+              className={`px-6 py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105 ${activeFilter === filter
+                ? "bg-blue-500 text-white shadow-lg shadow-orange-500/25"
+                : "bg-white text-gray-700 hover:bg-blue-100 hover:text-[#FD0315] shadow-sm"
+                }`}
             >
               {filter}
             </button>
@@ -136,11 +140,10 @@ const Projects = () => {
           {filteredProjects.map((project, index) => (
             <div
               key={project.id}
-              className={`group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 ${
-                animatedCards.includes(index)
-                  ? "translate-y-0 opacity-100"
-                  : "translate-y-10 opacity-0"
-              }`}
+              className={`group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 ${animatedCards.includes(index)
+                ? "translate-y-0 opacity-100"
+                : "translate-y-10 opacity-0"
+                }`}
               style={{ transitionDelay: `${600 + index * 150}ms` }}
             >
               <div className="relative overflow-hidden h-48">
@@ -151,13 +154,12 @@ const Projects = () => {
                 />
                 <div className="absolute top-4 right-4">
                   <span
-                    className={`px-3 py-1 rounded-full text-xs font-medium ${
-                      project.category === "Web Development"
-                        ? "bg-blue-100 text-red-700"
-                        : project.category === "Software Development"
+                    className={`px-3 py-1 rounded-full text-xs font-medium ${project.category === "Web Development"
+                      ? "bg-blue-100 text-red-700"
+                      : project.category === "Software Development"
                         ? "bg-blue-100 text-blue-700"
                         : "bg-green-100 text-green-700"
-                    }`}
+                      }`}
                   >
                     {project.category}
                   </span>
@@ -182,13 +184,24 @@ const Projects = () => {
                   ))}
                 </div>
                 <div className="flex gap-3">
-                  <button className="flex-1 bg-blue-500 text-white py-2 px-4 rounded-lg font-medium hover:bg-blue-600 transition-colors duration-300 transform hover:scale-105">
-                    View code
-                  </button>
-                  <button className="flex-1 border-2 border-blue-500 text-[#FD0315] py-2 px-4 rounded-lg font-medium hover:bg-blue-500 hover:text-white transition-all duration-300 transform hover:scale-105">
+                  <a
+                    href={project.codeLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 text-center bg-blue-500 text-white py-2 px-4 rounded-lg font-medium hover:bg-blue-600 transition-colors duration-300 transform hover:scale-105"
+                  >
+                    View Code
+                  </a>
+                  <a
+                    href={project.demoLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 text-center border-2 border-blue-500 text-[#FD0315] py-2 px-4 rounded-lg font-medium hover:bg-blue-500 hover:text-white transition-all duration-300 transform hover:scale-105"
+                  >
                     Live Demo
-                  </button>
+                  </a>
                 </div>
+
               </div>
             </div>
           ))}
